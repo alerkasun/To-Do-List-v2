@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: to_do_list_development
+  database: to_do_list_v2_development
   pool: 5
   username: postgres
   password: postgres
@@ -19,7 +19,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: to_do_list_test
+  database: to_do_list_v2_test
 
   pool: 5
   username: postgres
@@ -29,7 +29,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: to_do_list_production
+  database: to_do_list_v2_production
   pool: 5
   username: postgres
   password: postgres
