@@ -1,7 +1,13 @@
+
+
 <h1> This is Index <h1>
   <% @projects.each do |project| %>
 <p> <%= link_to project.name, project %> <p>
+<%= link_to "New taskdsdsds", new_project_task_path(project) %>
+<%= link_to "New task", new_project_task_path(project) %>
 <% end %>
+
 
 <%= link_to "New Project", new_project_path %>
 <%= link_to 'Back', projects_path %>
+<div class="btn-group btn-group-lg" role="group" aria-label="..."> <%= link_to 'Back', projects_path %> </div>

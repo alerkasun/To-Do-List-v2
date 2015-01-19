@@ -5,6 +5,13 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.8'
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem "cancan"
+
+gem 'bootstrap-sass', '~> 3.3.1'
+
+gem 'autoprefixer-rails'
+
+gem 'devise'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
