@@ -17,7 +17,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(projects_params)
+    @project = current_user.projects.new(projects_params)
 
     if @project.save
       redirect_to projects_path, :notice => " Your new project created! "

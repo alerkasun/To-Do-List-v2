@@ -1,13 +1,18 @@
 
 
 <h1> This is Index <h1>
+
+<% @projects = current_user.projects %>
   <% @projects.each do |project| %>
 <p> <%= link_to project.name, project %> <p>
-<%= link_to "New taskdsdsds", new_project_task_path(project) %>
 <%= link_to "New task", new_project_task_path(project) %>
 <% end %>
 
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default"><%= link_to "New Project", new_project_path %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Back', projects_path, id: "new_link", remote: true %></button>
+</div>
 
-<%= link_to "New Project", new_project_path %>
-<%= link_to 'Back', projects_path %>
-<div class="btn-group btn-group-lg" role="group" aria-label="..."> <%= link_to 'Back', projects_path %> </div>
+
+
+
